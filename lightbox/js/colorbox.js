@@ -124,11 +124,17 @@
       left: parseInt(this.$image.css('border-left-width'), 10)
     };
 
-	// DEBUT - Maintenance par Sedrick Levesque
+	// DEBUT - Maintenance par Sedrick Levesque Ticket #2
 	this.$outerContainer.css('border-radius',this.options.roundCorner);
 	this.$container.css('border-radius',this.options.roundCorner);
 	this.$image.css('border-radius',this.options.roundCorner);
-	// FIN - Maintenance par Sedrick Levesque
+    // FIN - Maintenance par Sedrick Levesque Ticket #2
+    
+
+	// DEBUT - Maintenance par Sedrick Levesque ticket #3
+	this.$outerContainer.css('padding','100px');
+	this.$outerContainer.addClass('honeycomb');
+	// FIN - Maintenance par Sedrick Levesque ticket #3
 	
     // Attach event handlers to the newly minted DOM elements
     this.$overlay.hide().on('click', function() {
