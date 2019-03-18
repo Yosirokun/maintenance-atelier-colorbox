@@ -123,6 +123,12 @@
       left: parseInt(this.$image.css('border-left-width'), 10)
     };
 
+	// DEBUT - Maintenance par Sedrick Levesque
+	this.$outerContainer.css('border-radius',40);
+	this.$container.css('border-radius',40);
+	this.$image .css('border-radius',40);
+	// FIN - Maintenance par Sedrick Levesque
+	
     // Attach event handlers to the newly minted DOM elements
     this.$overlay.hide().on('click', function() {
       self.end();
